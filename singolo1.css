@@ -157,38 +157,69 @@ li:last-child {
     font-family: "Lato ", sans-serif;
 }
 
-h2 {
-    font-family: "Lato", sans-serif;
-    font-size: 2.8rem;
-    line-height: 18px;
-}
 
 .services__description {
-    padding-top: 4.5rem;
-    letter-spacing: .2px;
-    line-height: 4rem;
-    word-spacing: 3px;
+    padding-top: 3.5rem;
 }
 
-.services_list {
+.services__title {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.2px;
+    margin-bottom: 0;
+}
+
+.services__text {
+    margin: 1.8rem 0;
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    line-height: 3rem;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.services__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    justify-content: space-between;
+    padding: 2.3rem 0;
+    font-family: "Lato", sans-serif;
 }
 
 .service {
     display: flex;
-    width: 33%;
+    margin-bottom: 1.7rem;
+    width: 30.1rem;
+}
+
+.service__icon {
+    padding: .6rem 0.1rem;
 }
 
 .service__content {
-    padding-left: 2.2rem;
-    margin-right: 1rem;
+    padding-left: 2rem;
 }
 
+.service__title {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    margin: 0 0 0 -1px;
+    letter-spacing: -0.05px;
+    padding-top: .2rem;
+    font-size: 1.8rem;
+}
 
-
-
-
-
-
+.service__text {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    text-align: justify;
+    letter-spacing: -0.2px;
+    margin: .8rem 0;
+    overflow: hidden;
+}
