@@ -98,6 +98,7 @@ li:last-child {
     background-color: #f06c64;
     border-bottom: 5px solid #ea676b;
     position: relative;
+    max-height: 60rem ;
 }
 .wrapper {
     max-width: 94rem;
@@ -107,7 +108,8 @@ li:last-child {
 
 .slider__item{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     flex: 0 0 100%;
     padding: 5.1rem;
     margin-bottom: 3.2rem;
@@ -115,17 +117,18 @@ li:last-child {
 }
 
 .phone__vertical{
-
+    margin-left: 2.1rem;
+    margin-top: 0.2rem;
 }
 
 .phone__horizontal{
-    transform: rotate(90deg);
+    margin-right: 2rem;
 }
 
 .slider__control {
     display: inline-block;
     position: absolute;
-    top: 50%;
+    top: 28.1rem;
     cursor: pointer;
     width: 3.1rem;
     height: 3.1rem;
@@ -139,7 +142,8 @@ li:last-child {
 
 .slider__control_left {
     background-image: url("./assets/chevLeft.svg");
-    left: 0;
+    left: .2rem;
+
 }
 .slider__control_right {
     background-image: url("assets/chevLeft.svg");
