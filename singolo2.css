@@ -10,6 +10,7 @@ html {
 body{
   max-width: 102rem;
   font-family: "Lato", sans-serif;
+  color: #666d89;
 }
 
 .portfolio {
@@ -24,7 +25,6 @@ body{
 }
 
 .portfolio__body{
-  color: #666d89;
 }
 
 .portfolio__header-block{
@@ -35,7 +35,7 @@ body{
   font-weight: 900;
   font-size: 3rem;
   line-height: 3.5rem;
-  padding: 6.1rem 0 2rem 0;
+  padding: 6.2rem 0 2rem 0;
   letter-spacing: -0.2px;
 }
 
@@ -47,22 +47,12 @@ body{
   padding: 0 0 1.25rem 0;
 }
 
-.active{
-  color: #dedede;
-  border: 1px solid #c5c5c5
-}
-
 .filter__buttons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 0 1.9rem 0;
+  padding: 0 0 1.85rem 0;
 }
-
-.filter__button:focus {
-  outline: none;
-}
-
 
 .filter__button{
   font-family: "Lato", sans-serif;
@@ -79,29 +69,96 @@ body{
   margin-right: 1rem;
 }
 
+.filter__button.active{
+  color: #dedede;
+  border: 1px solid #c5c5c5
+}
+
 .filter__button:focus {
   outline: none;
 }
 
 .filter__button:hover {
   color: #dedede;
-  border: 1px solid #c5c5c5
+  border: 1px solid #c5c5c5;
 }
 
 .portfolio__items{
   height: 59.2rem;
 }
 
-
 .portfolio__items{
   display: grid;
   justify-content: center;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 2rem;
-  grid-row-gap: 2.2rem;
+  grid-row-gap: 1.72rem;
 }
 
+.about-us{
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+  color: #767e9e;
+  height: 73.4rem;
+}
 
+.about-us__title {
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 5.6rem 0 0 0 ;
+  letter-spacing: -0.15px;
+  color: #666d89;
+  line-height: 4.5rem;
+}
+
+.about-us__text{
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding: 1.3rem 0 4.4rem 0 ;
+  line-height: 3.05rem;
+  letter-spacing: -0.1px;
+  text-align: justify;
+  color: #767e9e;
+}
+
+.layout-3-column{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  overflow: hidden;
+  max-width: 94.3rem;
+}
+
+.employee__content{
+  width: 32%;
+}
+
+.employee__name{
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #666d89;
+  line-height: 2.2rem;
+  margin: 1.3rem 0 0 0;
+  letter-spacing: -0.1px;
+
+}
+
+.employee__text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  color: #767e9e;
+  text-align: justify;
+  margin: 0.8rem 0 0 0;
+}
+
+.employee__social-icons{
+  padding: 2.4rem 0 0 0;
+}
+
+.social-icons__icon{
+  margin: 1rem 0.6rem 0 0;
+}
 
 
 
