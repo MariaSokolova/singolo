@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    max-width: 102rem;
+    font-family: "Lato", sans-serif;
+    background-color: #f06c64;
+}
+
+.wrapper {
+    max-width: 94rem;
+    margin: auto;
+}
+
+.quote__title {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    color: #f0d8d9;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: -0.17px;
+    padding: 5.5rem 0 0 0;
+}
+
+.quote__text {
+    /*width: 940px;*/
+    /*height: 57px;*/
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #f0d8d9;
+    font-weight: 300;
+    text-align: justify;
+    margin: 1.3rem 0 0 0;
+}
+
+.layout-2-column {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.contact__form {
+    color: #f48c8f;
+}
+
+
+/*input:invalid {border-color: red;}*/
+/*input:valid {border-color: green;}*/
