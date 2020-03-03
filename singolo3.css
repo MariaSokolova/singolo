@@ -11,6 +11,10 @@ html {
 body{
     max-width: 102rem;
     font-family: "Lato", sans-serif;
+
+}
+
+.quote {
     background-color: #f06c64;
 }
 
@@ -26,7 +30,7 @@ body{
     font-weight: 900;
     text-align: left;
     letter-spacing: -0.17px;
-    padding: 5.5rem 0 0 0;
+    padding: 5.6rem 0 0 0;
 }
 
 .quote__text {
@@ -37,24 +41,151 @@ body{
     color: #f0d8d9;
     font-weight: 300;
     text-align: justify;
-    margin: 1.3rem 0 0 0;
+    margin: 1.32rem 0 0 0;
+
 }
+
+
 
 .layout-2-column {
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    /*text-align: center;*/
+    /*align-items: stretch;*/
 }
 
-
-
-
+.contact {
+    margin-top: 4.4rem;
+}
 
 
 
 .contact__form {
+    width: 66%;
     color: #f48c8f;
 }
+
+.contact__form input,textarea {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    outline: none;
+    color: #f48c8f;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    padding: 0.8rem 0 0.78rem 1.43rem;
+    text-align: left;
+    width: 100%;
+    letter-spacing: -0.6px;
+    margin-bottom: 1.65rem;
+}
+
+textarea {
+    resize: none;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #f48c8f;
+    font-weight: 700;
+    height: 20.2rem;
+
+}
+
+::placeholder {
+
+    color: #f48c8f;
+    opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f48c8f;
+}
+
+.button {
+    font-weight: 900;
+    background: #d6564f;
+    color: #f48c8f;
+    border: none;
+    border-radius: 5px;
+    padding: .8rem 0 0.78rem 1.43rem;
+    text-align: center;
+    font-style: normal;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+
+
+.contact__content {
+    width: 32%;
+    color: #f0d8d9;
+}
+
+.contact__content a {
+    display: inline-block;
+    text-decoration: none;
+    color:  #f0d8d9;
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 2rem;
+    letter-spacing: 0.2px;
+}
+
+.contact__title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 900;
+    letter-spacing: -0.03px;
+}
+
+.contact__text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 1rem;
+    letter-spacing: -0.25px;
+}
+
+.contact__data {
+    margin-top: 2.3rem;
+}
+
+
+.ico-block {
+    margin-bottom: 0.15rem;
+    display: flex;
+    align-items: center;
+}
+
+.ico-block__item {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    align-self: center;
+    color: #f0d8d9;
+    margin-right: 10px;
+}
+
+.ico_location {
+    background-image: url("./assets/location-small-icon.svg");
+    background-position: center;
+
+}
+
+.ico_phone {
+    background-image: url("assets/phone-small-icon.svg");
+    background-position: center;
+}
+
+.ico_letter {
+    background-image: url("./assets/mail-small-icon.svg");
+    background-position: center;
+}
+
+
 
 
 /*input:invalid {border-color: red;}*/
