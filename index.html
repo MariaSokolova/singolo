@@ -4,28 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="singolo1.css">
+  <link rel="stylesheet" href="style.css">
   <title>Singolo1</title>
 </head>
 <body>
 <header class="header">
-  <div>
-    <h1 class="brand">
-      <a href="#" class="brand__logo">Singolo<span class="brand__logo_icon">*</span></a>
-    </h1>
-  </div>
-  <nav class="header__navigation">
-    <ul class="navigation">
-      <li><a href="#" class="navigation_active">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<section class="slider">
   <div class="wrapper">
+    <div class="header__content">
+      <h1 class="brand">
+        <a href="#" class="brand__logo">Singolo<span class="brand__logo_icon">*</span></a>
+      </h1>
+      <nav class="header__navigation">
+        <ul class="navigation">
+          <li class="navigation__item"><a href="#" class="navigation__active">Home</a></li>
+          <li class="navigation__item"><a href="#">Services</a></li>
+          <li class="navigation__item"><a href="#">Portfolio</a></li>
+          <li class="navigation__item"><a href="#">About</a></li>
+          <li class="navigation__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="slider">
+  <div class="wrapper slider__content">
     <div class="slider__item">
       <div class="phone__vertical">
         <img src="./assets/iPhone_vertical.png" alt="iPhone vertical"
@@ -38,9 +41,9 @@
     </div>
     <a class="slider__control slider__control_left" href="#" role="button"></a>
     <a class="slider__control slider__control_right" href="#" role="button"></a>
-
   </div>
 </section>
+
 <section class="services">
   <div class="wrapper">
     <div class="services__description">
@@ -131,6 +134,188 @@
     </div>
   </div>
 </section>
+
+<section class="portfolio">
+  <div class="wrapper">
+    <div class="portfolio__body">
+      <div class="portfolio__header-block header-block">
+        <h2 class="header-block__title">Portfolio</h2>
+        <div class="header-block__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+          odio sem nec elit.
+        </div>
+      </div>
+      <nav class="portfolio__filter filter">
+        <div class="filter__buttons">
+          <button type="button" data-filter="1" class="filter__button active">All</button>
+          <button type="button" data-filter="2" class="filter__button">Web Design</button>
+          <button type="button" data-filter="3" class="filter__button">Graphic Design</button>
+          <button type="button" data-filter="3" class="filter__button">Artwork</button>
+        </div>
+      </nav>
+      <div class="portfolio__items gallery">
+        <div class="portfolio__column">
+          <a href="assets/portfolio/01.png" class="portfolio__item"><img src="assets/portfolio/01.png" alt="Image01"
+                                                                         width="220" height="187"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/02.png" class="portfolio__item"><img src="assets/portfolio/02.png" alt="Image01"
+                                                                         width="220" height="187"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/03.png" class="portfolio__item"><img src="assets/portfolio/03.png" alt="Image01"
+                                                                         width="220" height="187"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/04.png" class="portfolio__item"><img src="assets/portfolio/04.png"
+                                                                         alt="Image01"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/05.png" class="portfolio__item"><img src="assets/portfolio/05.png"
+                                                                         alt="Image01"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/06.png" class="portfolio__item"><img src="assets/portfolio/06.png"
+                                                                         alt="Image01"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/07.png" class="portfolio__item"><img src="assets/portfolio/07.png"
+                                                                         alt="Image01"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/08.png" class="portfolio__item"><img src="assets/portfolio/08.png"
+                                                                         alt="Image01"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/09.png" class="portfolio__item"><img src="assets/portfolio/09.png"
+                                                                         alt="Image01"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/10.png" class="portfolio__item"><img src="assets/portfolio/10.png"
+                                                                         alt="Image01"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/11.png" class="portfolio__item"><img src="assets/portfolio/11.png"
+                                                                         alt="Image01"></a>
+        </div>
+        <div class="portfolio__column">
+          <a href="assets/portfolio/12.png" class="portfolio__item"><img src="assets/portfolio/12.png"
+                                                                         alt="Image01"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about-us">
+  <div class="about-us__wrapper">
+    <div class="about-us__title">About Us</div>
+    <div class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+      commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+      commodo, tortor mauris condimentum nibh.
+    </div>
+    <div class="layout-3-column">
+      <div class="employee__content">
+        <img src="assets/img/photo-employee-1.png" width="301" height="300" alt="Photo employee 1">
+        <div class="employee__name">Adam Jensen</div>
+        <p class="employee__text">
+          Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+        </p>
+        <div class="employee__social-icons social-icons">
+          <a href="#" class="social-icons__icon"><img src="assets/facebook-icon.png" alt="facebook icon"></a>
+          <a href="#" class="social-icons__icon"><img src="assets/google-icon.png" alt="google-icon icon"></a>
+          <a href="#" class="social-icons__icon"><img src="assets/twitter-icon.png" alt="twitter icon"></a>
+          <a href="#" class="social-icons__icon"><img src="assets/linkedIn-icon.png" alt="linkedin-ico icon"></a>
+
+        </div>
+      </div>
+      <div class="employee__content">
+        <img src="assets/img/photo-employee-2.png" width="300" height="300" alt="Photo employee 3">
+
+        <div class="employee__name">Desmond Miles</div>
+        <p class="employee__text">
+          Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+        </p>
+        <div class="employee__social-icons social-icons">
+          <a href="#" class="social-icons__icon"><img src="assets/facebook-icon.png" alt="facebook icon"></a>
+          <a href="#" class="social-icons__icon"><img src="assets/google-icon.png" alt="google-icon icon"></a>
+          <a href="#" class="social-icons__icon"><img src="assets/twitter-icon.png" alt="twitter icon"></a>
+          <a href="#" class="social-icons__icon"><img src="assets/linkedIn-icon.png" alt="linkedin-ico icon"></a>
+        </div>
+      </div>
+      <div class="employee__content">
+        <img src="assets/img/photo-employee-3.png" width="300" height="300" alt="Photo employee 3">
+        <div class="employee__name">Scolara Visari</div>
+        <p class="employee__text">
+          Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+        </p>
+        <div class="employee__social-icons social-icons">
+          <a href="#" class="social-icons__icon"><img src="assets/facebook-icon.png" alt="facebook icon"></a>
+          <a href="#" class="social-icons__icon"><img src="assets/google-icon.png" alt="google-icon icon"></a>
+          <a href="#" class="social-icons__icon"><img src="assets/twitter-icon.png" alt="twitter icon"></a>
+          <a href="#" class="social-icons__icon"><img src="assets/linkedIn-icon.png" alt="linkedin-ico icon"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="quote">
+  <div class="wrapper">
+    <h2 class="quote__title">Get a Quote</h2>
+    <p class="quote__text">
+      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
+      porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+      condimentum nibh.
+    </p>
+    <div class="layout-2-column contact">
+      <div class="contact__form">
+        <form action="#" method="post" class="form">
+          <input pattern="[a-zA-Z0-9]+" placeholder="Name (Required)" minlength="4" id="name"
+                 required>
+          <input type="email" name="email" placeholder="Email (Required)" id="email" required>
+          <input type="text" name="subject" placeholder="Subject" id="subject">
+          <textarea name="comment" placeholder="Describe your project in detail..." id="content" cols="40" rows="6"
+                    maxlength="350"></textarea>
+          <div class="form__button">
+            <button type="submit" class="button button_colored">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact__content">
+        <h3 class="contact__title">Contact Information</h3>
+        <p class="contact__text">
+          Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet
+          volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+        </p>
+        <div class="contact__data">
+          <div class="ico-block">
+            <span class="ico-block__item ico_location"></span>
+            <a href="#">Elm St. 14/05 Lost City</a>
+          </div>
+          <div class="ico-block">
+            <span class="ico-block__item ico_phone"></span>
+            <a href="tel:+375111111111">03528 331 86 35</a>
+          </div>
+          <div class="ico-block">
+            <span class="ico-block__item ico_letter"></span>
+            <a href="mailto:info@singolo.com">info@singolo.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__content">
+      <p class="footer__text">© Copyright 2013 · by PSDchat.com</p>
+      <div class="footer__icons">
+        <a href="#" class="footer-icons__icon"><img src="assets/facebook-icon.png" alt="facebook icon"></a>
+        <a href="#" class="footer-icons__icon"><img src="assets/google-icon.png" alt="google-icon icon"></a>
+        <a href="#" class="footer-icons__icon"><img src="assets/twitter-icon.png" alt="twitter icon"></a>
+        <a href="#" class="footer-icons__icon"><img src="assets/linkedIn-icon.png" alt="linkedin-ico icon"></a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
