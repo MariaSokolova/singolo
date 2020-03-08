@@ -187,7 +187,7 @@ li:not(:first-child)::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 4.2rem 0 3.3rem 0;
+  margin: 4.2rem 0 3.2rem 0;
   font-family: "Lato", sans-serif;
 }
 
@@ -203,12 +203,13 @@ li:not(:first-child)::before {
 
 .service__content {
   margin-left: 2rem;
+  overflow: hidden;
 }
 
 .service__title {
   font-family: "Lato", sans-serif;
   font-weight: 900;
-  margin: 0.2rem 0 0 -1px;
+  margin: 0 0 0 -1px;
   letter-spacing: -0.05px;
   font-size: 1.8rem;
 }
@@ -252,11 +253,10 @@ li:not(:first-child)::before {
   font-size: 1.8rem;
   line-height: 2.7rem;
   margin: 0 0 1.25rem 0;
-  margin: 0 0 1.25rem 0;
 }
 
 .filter {
-  margin: 0 0 1.9rem 0;
+  margin: 0 0 1.7rem 0;
 }
 
 .filter__buttons {
