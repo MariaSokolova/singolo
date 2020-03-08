@@ -9,12 +9,12 @@ html {
 }
 
 body{
-  max-width: 102rem;
+  width: 102rem;
   font-family: "Lato", sans-serif;
 }
 
 .wrapper {
-  max-width: 94rem;
+  width: 94rem;
   margin: auto;
 }
 
@@ -39,7 +39,6 @@ li a {
 
 .brand {
   align-items: center;
-  /*margin-bottom: 2rem;*/
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 400;
@@ -59,14 +58,13 @@ li a {
 
 .header__navigation {
   display: flex;
-  /*margin-right: 4rem;*/
   justify-content: flex-end;
   align-items: flex-end;
 }
 
 .navigation {
   list-style: none;
-  /*margin-right: 0.1rem;*/
+  margin-bottom: 0.2rem;
 }
 
 .navigation__item {
@@ -181,6 +179,8 @@ li:not(:first-child)::before {
   letter-spacing: -0.2px;
   line-height: 3rem;
   text-align: justify;
+  overflow: hidden;
+  height: 6rem;
 }
 
 .services__list {
@@ -203,7 +203,6 @@ li:not(:first-child)::before {
 
 .service__content {
   margin-left: 2rem;
-  overflow: hidden;
 }
 
 .service__title {
@@ -220,6 +219,8 @@ li:not(:first-child)::before {
 
 
 .service__text {
+  overflow: hidden;
+  height: 6.6rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
@@ -227,7 +228,6 @@ li:not(:first-child)::before {
   text-align: justify;
   letter-spacing: -0.2px;
   margin: .8rem 0;
-  overflow: hidden;
 }
 /*---PORTFOLIO SECTION---*/
 
@@ -243,7 +243,7 @@ li:not(:first-child)::before {
   font-weight: 900;
   font-size: 3rem;
   line-height: 3.5rem;
-  padding: 6.1rem 0 2rem 0;
+  padding: 6rem 0 2rem 0;
   letter-spacing: -0.2px;
 }
 
@@ -253,10 +253,12 @@ li:not(:first-child)::before {
   font-size: 1.8rem;
   line-height: 2.7rem;
   margin: 0 0 1.25rem 0;
+  overflow: hidden;
+  height: 2.7rem;
 }
 
 .filter {
-  margin: 0 0 1.7rem 0;
+  margin: 0 0 1.8rem 0;
 }
 
 .filter__buttons {
@@ -285,13 +287,12 @@ li:not(:first-child)::before {
   background: none;
   border: 1px solid #666d89;
   color: #767e9e;
-  margin-right: 0.85rem;
+  margin-right: 1rem;
 }
 
 .filter__button:first-child {
   letter-spacing: 0.03rem;
 }
-
 
 .filter__button.active{
   color: #dedede;
@@ -308,13 +309,13 @@ li:not(:first-child)::before {
 }
 
 .portfolio__items {
+  overflow: hidden;
   height: 60.1rem;
   display: grid;
   justify-content: center;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 2rem;
   grid-row-gap: 1.75rem;
-  overflow: hidden;
 }
 
 .about-us{
@@ -339,9 +340,11 @@ li:not(:first-child)::before {
 }
 
 .about-us__text{
+  overflow: hidden;
+  height: 6rem;
   font-weight: 300;
   font-size: 1.8rem;
-  margin: 1.3rem 0 4.5rem 0.1rem ;
+  margin: 1.3rem 0 4.4rem 0.1rem ;
   line-height: 3rem;
   letter-spacing: -0.1px;
   text-align: justify;
@@ -363,7 +366,6 @@ li:not(:first-child)::before {
 .employee__content{
   flex-basis: 32%;
   -webkit-flex-basis: 32%;
-  overflow: hidden;
 }
 
 .employee__name {
@@ -379,6 +381,8 @@ li:not(:first-child)::before {
 }
 
 .employee__text {
+  overflow: hidden;
+  height: 4.2rem;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 2.1rem;
@@ -417,10 +421,12 @@ li:not(:first-child)::before {
   font-weight: 900;
   text-align: left;
   letter-spacing: -0.17px;
-  padding: 5.6rem 0 0 0;
+  padding: 5.5rem 0 0 0;
 }
 
 .quote__text {
+  overflow: hidden;
+  height: 6rem;
   font-size: 1.8rem;
   line-height: 3rem;
   color: #f0d8d9;
@@ -477,7 +483,6 @@ textarea {
   font-weight: 400;
   height: 20.2rem;
   letter-spacing: -1px;
-
 }
 
 ::placeholder {
@@ -489,7 +494,7 @@ textarea {
 }
 
 .form__button {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .button {
@@ -500,7 +505,6 @@ textarea {
   border-radius: 5px;
   padding: 0.7rem 1.35rem 0.68rem 1.35rem;
   text-align: center;
-  /*font-style: normal;*/
   font-size: 1.6rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -529,6 +533,8 @@ textarea {
 }
 
 .contact__text {
+  overflow: hidden;
+  height: 8.8rem;
   font-size: 1.2rem;
   line-height: 2.2rem;
   font-weight: 400;
@@ -538,7 +544,7 @@ textarea {
 }
 
 .contact__data {
-  margin-top: 2.3rem;
+  margin-top: 2.1rem;
 }
 
 .ico-block {
@@ -573,11 +579,9 @@ textarea {
   background-position: center;
 }
 
-
 .footer {
   background: #2d303a;
 }
-
 
 .footer__content {
   display: flex;
@@ -585,7 +589,6 @@ textarea {
   align-items: center;
   height: 7.6rem;
 }
-
 
 .footer__text {
   color: #666d89;
