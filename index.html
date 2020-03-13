@@ -16,29 +16,40 @@
       </h1>
       <nav class="header__navigation">
         <ul id="navigation" class="navigation">
-          <li class="navigation__item "><a href="#" class="navigation__active">Home</a></li>
-          <li class="navigation__item"><a href="#services">Services</a></li>
-          <li class="navigation__item"><a href="#portfolio">Portfolio</a></li>
-          <li class="navigation__item"><a href="#about">About</a></li>
-          <li class="navigation__item"><a href="#contact">Contact</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link navigation__active">Home</a></li>
+          <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+          <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+          <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
         </ul>
       </nav>
     </div>
   </div>
 </header>
 
-<section class="slider">
+<section class="slider" id="main-slider">
   <div class="wrapper slider__content">
-    <div class="slider__item">
+    <div class="slider__item slider__item-red show-slide" id="slider-red">
       <div class="phone__vertical">
         <img src="./assets/iPhone_vertical.png" alt="iPhone vertical"
              class="phone__vertical_img">
+        <div class="vertical-screen hidden-screen"></div>
+
       </div>
       <div class="phone__horizontal">
         <img src="assets/iPhone_horizontal.png" alt="iPhone horizontal"
-             class="phone_horizontal_img">
+             class="phone__horizontal_img">
+        <div class="horizontal-screen hidden-screen"></div>
       </div>
+
     </div>
+
+
+    <div class="slider__item slider__item-blue">
+      <img src="assets/Slide-2.png" alt="slide 2">
+    </div>
+
+
     <a class="slider__control slider__control_left" href="#" role="button"></a>
     <a class="slider__control slider__control_right" href="#" role="button"></a>
   </div>
@@ -153,9 +164,8 @@
         </div>
       </nav>
       <div class="portfolio__items gallery">
-        <div class="portfolio__column">
-          <a href="assets/portfolio/01.png" class="portfolio__item"><img src="assets/portfolio/01.png" alt="Image01"
-                                                                         width="220" height="187"></a>
+        <div class="portfolio__column portfolio__column_bordered">
+          <img src="assets/portfolio/01.png" alt="Image01" width="220" height="187">
         </div>
         <div class="portfolio__column">
           <a href="assets/portfolio/02.png" class="portfolio__item"><img src="assets/portfolio/02.png" alt="Image01"
@@ -266,17 +276,30 @@
     </p>
     <div class="layout-2-column contact">
       <div class="contact__form">
-        <form action="#" method="post" class="form">
-          <input pattern="[a-zA-Z0-9]+" placeholder="Name (Required)" minlength="4" id="name"
+        <form action="#" method="post" class="form" id="contact-form">
+          <input type="text" pattern="[a-zA-Z0-9]+" placeholder="Name (Required)" minlength="4" id="name"
                  required>
           <input type="email" name="email" placeholder="Email (Required)" id="email" required>
           <input type="text" name="subject" placeholder="Subject" id="subject">
           <textarea name="comment" placeholder="Describe your project in detail..." id="content" cols="40" rows="6"
                     maxlength="350"></textarea>
           <div class="form__button">
-            <button type="submit" class="button button_colored">Submit</button>
+            <button id="button" type="submit" class="button button_colored">Submit</button>
           </div>
         </form>
+        <div id="message-block" class="hidden">
+          <div id="message" class="message-block">
+            <h3 class="message-block__title">Your message was sent</h3>
+            <div class="message-block__text">
+              <p><span id="message-subject"></span></p>
+              <br>
+              <p><span id="message-describe"></span></p>
+              <br>
+            </div>
+
+            <button id="close-btn" class="button message-block__button">OK</button>
+          </div>
+        </div>
       </div>
       <div class="contact__content">
         <h3 class="contact__title">Contact Information</h3>
