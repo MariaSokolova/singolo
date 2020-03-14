@@ -50,8 +50,8 @@
     </div>
 
 
-    <a class="slider__control slider__control_left" href="#" role="button"></a>
-    <a class="slider__control slider__control_right" href="#" role="button"></a>
+    <a class="slider__control slider__control_left" role="button"></a>
+    <a class="slider__control slider__control_right" role="button"></a>
   </div>
 </section>
 
@@ -156,63 +156,16 @@
         </div>
       </div>
       <nav class="portfolio__filter filter">
-        <div class="filter__buttons">
-          <button type="button" data-filter="1" class="filter__button active">All</button>
-          <button type="button" data-filter="2" class="filter__button">Web Design</button>
-          <button type="button" data-filter="3" class="filter__button">Graphic Design</button>
-          <button type="button" data-filter="3" class="filter__button">Artwork</button>
+        <div id="filter" class="filter__buttons">
+          <button type="button" data-filter="1" id="all" class="filter__button active">All</button>
+          <button type="button" data-filter="2" id="web" class="filter__button">Web Design</button>
+          <button type="button" data-filter="3" id="graphic" class="filter__button">Graphic Design</button>
+          <button type="button" data-filter="4" id="art" class="filter__button">Artwork</button>
         </div>
       </nav>
-      <div class="portfolio__items gallery">
-        <div class="portfolio__column portfolio__column_bordered">
-          <img src="assets/portfolio/01.png" alt="Image01" width="220" height="187">
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/02.png" class="portfolio__item"><img src="assets/portfolio/02.png" alt="Image01"
-                                                                         width="220" height="187"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/03.png" class="portfolio__item"><img src="assets/portfolio/03.png" alt="Image01"
-                                                                         width="220" height="187"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/04.png" class="portfolio__item"><img src="assets/portfolio/04.png"
-                                                                         alt="Image01"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/05.png" class="portfolio__item"><img src="assets/portfolio/05.png"
-                                                                         alt="Image01"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/06.png" class="portfolio__item"><img src="assets/portfolio/06.png"
-                                                                         alt="Image01"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/07.png" class="portfolio__item"><img src="assets/portfolio/07.png"
-                                                                         alt="Image01"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/08.png" class="portfolio__item"><img src="assets/portfolio/08.png"
-                                                                         alt="Image01"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/09.png" class="portfolio__item"><img src="assets/portfolio/09.png"
-                                                                         alt="Image01"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/10.png" class="portfolio__item"><img src="assets/portfolio/10.png"
-                                                                         alt="Image01"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/11.png" class="portfolio__item"><img src="assets/portfolio/11.png"
-                                                                         alt="Image01"></a>
-        </div>
-        <div class="portfolio__column">
-          <a href="assets/portfolio/12.png" class="portfolio__item"><img src="assets/portfolio/12.png"
-                                                                         alt="Image01"></a>
-        </div>
-      </div>
+      <div id="gallery" class="portfolio__items gallery"></div>
     </div>
+  </div>
   </div>
 </section>
 

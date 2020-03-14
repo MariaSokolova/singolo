@@ -85,15 +85,12 @@ const verticalScreen = document.getElementsByClassName('vertical-screen')[0];
 
 
 horizontalPhone.addEventListener('click', (event) => {
-  console.log('hello');
   document.getElementsByClassName('horizontal-screen')[0].classList.toggle('hidden-screen');
 });
+
 horizontalScreen.addEventListener('click', (event) => {
-  console.log('hello');
   document.getElementsByClassName('horizontal-screen')[0].classList.toggle('hidden-screen');
 });
-
-
 
 verticalPhone.addEventListener('click', () => {
   console.log('hello000');
@@ -107,12 +104,113 @@ verticalScreen.addEventListener('click', () => {
   document.getElementsByClassName('vertical-screen')[0].classList.toggle('hidden-screen');
 });
 
+
+//------Portfolio. Переключение табов------------
+const gallery = document.getElementById('gallery');
+const allButton = document.getElementById('all');
+const webButton = document.getElementById('web');
+const artButton = document.getElementById('art');
+const graphicButton = document.getElementById('graphic');
+const allCards = [
+  {path: 'assets/portfolio/01.png', name: 'Image01'},
+  {path: 'assets/portfolio/02.png', name: 'Image02'},
+  {path: 'assets/portfolio/03.png', name: 'Image03'},
+  {path: 'assets/portfolio/04.png', name: 'Image04'},
+  {path: 'assets/portfolio/05.png', name: 'Image05'},
+  {path: 'assets/portfolio/06.png', name: 'Image06'},
+  {path: 'assets/portfolio/07.png', name: 'Image07'},
+  {path: 'assets/portfolio/08.png', name: 'Image08'},
+  {path: 'assets/portfolio/09.png', name: 'Image09'},
+  {path: 'assets/portfolio/10.png', name: 'Image10'},
+  {path: 'assets/portfolio/11.png', name: 'Image11'},
+  {path: 'assets/portfolio/12.png', name: 'Image12'},
+
+];
+
+const webCards = [
+  {path: 'assets/portfolio/03.png', name: 'Image03'},
+  {path: 'assets/portfolio/04.png', name: 'Image04'},
+  {path: 'assets/portfolio/05.png', name: 'Image05'},
+  {path: 'assets/portfolio/06.png', name: 'Image06'},
+  {path: 'assets/portfolio/07.png', name: 'Image07'},
+  {path: 'assets/portfolio/08.png', name: 'Image08'},
+  {path: 'assets/portfolio/09.png', name: 'Image09'},
+  {path: 'assets/portfolio/10.png', name: 'Image10'},
+  {path: 'assets/portfolio/11.png', name: 'Image11'},
+  {path: 'assets/portfolio/12.png', name: 'Image12'},
+  {path: 'assets/portfolio/01.png', name: 'Image01'},
+  {path: 'assets/portfolio/02.png', name: 'Image02'}
+];
+
+const artCards = [
+  {path: 'assets/portfolio/05.png', name: 'Image05'},
+  {path: 'assets/portfolio/06.png', name: 'Image06'},
+  {path: 'assets/portfolio/07.png', name: 'Image07'},
+  {path: 'assets/portfolio/08.png', name: 'Image08'},
+  {path: 'assets/portfolio/09.png', name: 'Image09'},
+  {path: 'assets/portfolio/10.png', name: 'Image10'},
+  {path: 'assets/portfolio/11.png', name: 'Image11'},
+  {path: 'assets/portfolio/12.png', name: 'Image12'},
+  {path: 'assets/portfolio/01.png', name: 'Image01'},
+  {path: 'assets/portfolio/02.png', name: 'Image02'},
+  {path: 'assets/portfolio/03.png', name: 'Image03'},
+  {path: 'assets/portfolio/04.png', name: 'Image04'}
+];
+
+const graphicCards = [
+  {path: 'assets/portfolio/07.png', name: 'Image07'},
+  {path: 'assets/portfolio/08.png', name: 'Image08'},
+  {path: 'assets/portfolio/09.png', name: 'Image09'},
+  {path: 'assets/portfolio/10.png', name: 'Image10'},
+  {path: 'assets/portfolio/11.png', name: 'Image11'},
+  {path: 'assets/portfolio/12.png', name: 'Image12'},
+  {path: 'assets/portfolio/01.png', name: 'Image01'},
+  {path: 'assets/portfolio/02.png', name: 'Image02'},
+  {path: 'assets/portfolio/03.png', name: 'Image03'},
+  {path: 'assets/portfolio/04.png', name: 'Image04'},
+  {path: 'assets/portfolio/05.png', name: 'Image05'},
+  {path: 'assets/portfolio/06.png', name: 'Image06'}
+];
+const filter = document.getElementById('filter');
+
+
+allButton.addEventListener('click', () => showCards(allCards));
+webButton.addEventListener('click', () => showCards(webCards));
+artButton.addEventListener('click', () => showCards(artCards));
+graphicButton.addEventListener('click', () => showCards(graphicCards));
+
+
+function showCards(arr) {
+  let cards = '';
+
+  arr.forEach(el => {
+    cards += `<div class="portfolio__column"><img src="${el.path}" alt="${el.name}" width="220" height="187"></div>`
+  });
+
+  gallery.innerHTML = cards;
+}
+
+
+
+filter.addEventListener('click', (event) => {
+  filter.querySelectorAll('.filter__button')
+    .forEach(el => el.classList.remove('active'));
+  event.target.classList.add('active');
+
+});
+
+
+
 //------Portfolio. Взаимодействие с картинками------------
 
-// const image = document.getElementById()
-
-
-
+gallery.addEventListener('click', (event) => {
+  gallery.querySelectorAll('.portfolio__column')
+    .forEach(el => {
+      console.log(el);
+      el.firstChild.classList.remove('portfolio__column_bordered')
+    });
+  event.target.classList.add('portfolio__column_bordered');
+});
 
 
 
@@ -174,7 +272,7 @@ verticalScreen.addEventListener('click', () => {
 //
 // };
 
-
+showCards(allCards);
 
 
 
