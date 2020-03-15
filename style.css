@@ -579,12 +579,13 @@ textarea {
 }
 
 #message-block {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 102rem;
   height: 100%;
   top: 0;
   left: 0;
   background: #0008;
+  z-index: 9999;
 }
 
 #message-block.hidden{
@@ -598,12 +599,13 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999;
   border: 2px solid #d6564f;
   background: #313745;
   text-align: center;
+  color: #f48c8f;
   animation-name: animate;
-  animation-duration: 0.5s
+  animation-duration: 0.5s;
+  z-index: 9999;
 }
 
 .message-block {
