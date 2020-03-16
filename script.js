@@ -54,9 +54,9 @@ rightArrow.addEventListener('click', toggleSlide);
 
 //--------Активация экранов телефонов----------------------------
 
-const horizontalPhone = document.getElementsByClassName('phone__horizontal_img')[0];
+const horizontalPhone = document.getElementsByClassName('phone__horizontal_click')[0];
 const horizontalScreen = document.getElementsByClassName('horizontal-screen')[0];
-const verticalPhone = document.getElementsByClassName('phone__vertical_img')[0];
+const verticalPhone = document.getElementsByClassName('phone__vertical_click')[0];
 const verticalScreen = document.getElementsByClassName('vertical-screen')[0];
 
 horizontalPhone.addEventListener('click', (event) => {
