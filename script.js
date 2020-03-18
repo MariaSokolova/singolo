@@ -1,12 +1,49 @@
+//-------Scroll-------------------
+
 const navigation = document.getElementById('navigation');
+
+
+let avgHeight = 0;
+const sections = document.querySelectorAll('section');
+sections.forEach(el => {
+  avgHeight += el.offsetHeight;
+});
+let ScrollOffset = document.documentElement.clientHeight - parseInt(avgHeight / sections.length);
+ScrollOffset = (ScrollOffset < 30) ? document.querySelector('header').offsetHeight : ScrollOffset;
+
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+  const currentPosition = window.scrollY + ScrollOffset;
+  const divs = document.querySelectorAll('#wrapper>section');
+  const links = document.querySelectorAll('#navigation a');
+
+  divs.forEach((el) => {
+    if(el.offsetTop <= currentPosition && (el.offsetTop + el.offsetHeight - 60) > currentPosition) {
+      links.forEach((a) => {
+        a.classList.remove(('navigation__active'));
+        if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add(('navigation__active'));
+        }
+      })
+    }
+  });
+
+  if (document.documentElement.scrollTop + document.documentElement.clientHeight === document.documentElement.scrollHeight) {
+    navigation.querySelector('a.navigation__active').classList.remove('navigation__active');
+    links[links.length - 1].classList.add('navigation__active');
+  }
+  // if (navigation.querySelector('a.navigation__active') === null) {
+  //   links[0].classList.add('navigation__active');
+  // }
+}
+
 const button = document.getElementById('button');
 const closeButton = document.getElementById('close-btn');
 
-navigation.addEventListener('click', (event) => {
-  navigation.querySelectorAll('.navigation__link')
-    .forEach(el => el.classList.remove('navigation__active'));
-  event.target.classList.add('navigation__active');
-});
+
+//-------Form, Modal window-------------------
 
 button.addEventListener('click', (event) => {
   const name = document.getElementById('name').value;
