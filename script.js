@@ -226,7 +226,7 @@ graphicButton.addEventListener('click', () => showCards(graphicCards));
 function showCards(arr) {
   let cards = '';
   arr.forEach(el => {
-    cards += `<div class="portfolio__column"><img src="${el.path}" alt="${el.name}" width="220" height="187"></div>`
+    cards += `<div class="portfolio__column"><img src="${el.path}" alt="${el.name}"></div>`
   });
   gallery.innerHTML = cards;
 }
