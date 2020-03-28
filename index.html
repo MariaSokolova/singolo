@@ -11,19 +11,24 @@
   <header class="header">
     <div class="wrapper  ">
       <div class="header__content">
-        <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
+        <span id="hamburger" class="header__hamburger hamburger">
+          <span class="hamburger__line"></span>
+        </span>
         <h1 class="brand">
           <a href="#" class="brand__logo">Singolo<span class="brand__logo_icon">*</span></a>
         </h1>
-        <nav class="header__navigation header__hamburger-navigation">
-          <ul id="navigation" class="navigation">
-            <li class="navigation__item"><a href="#home" class="navigation__link navigation__active">Home</a></li>
-            <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
-            <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
-            <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
-            <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="nav__wrapper">
+          <nav class="header__navigation header__hidden">
+            <ul id="navigation" class="navigation">
+              <li class="navigation__item"><a href="#home" class="navigation__link navigation__active">Home</a></li>
+              <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+              <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+              <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+              <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
     </div>
   </header>
