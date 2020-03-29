@@ -3,6 +3,7 @@
 const navigation = document.getElementById('navigation');
 let avgHeight = 0;
 const sections = document.querySelectorAll('section');
+const hamburgerButton = document.getElementById('hamburger');
 
 sections.forEach(el => {
   avgHeight += el.offsetHeight;
@@ -22,6 +23,9 @@ function onScroll(event) {
     if (el.offsetTop <= currentPosition && (el.offsetTop + el.offsetHeight - 60) > currentPosition) {
       links.forEach((a) => {
         a.classList.remove(('navigation__active'));
+        document.querySelector('.header__navigation').classList.remove('header__navigation-active');
+        document.querySelector('.nav__wrapper').classList.remove('nav__wrapper-active');
+        hamburgerButton.classList.remove('hamburger__active');
         if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
           a.classList.add(('navigation__active'));
         }
@@ -34,6 +38,25 @@ function onScroll(event) {
     links[links.length - 1].classList.add('navigation__active');
   }
 }
+
+//-----Hamburger------
+
+hamburgerButton.addEventListener('click', (event) => {
+  hamburgerButton.classList.toggle('hamburger__active');
+  document.querySelector('.header__navigation').classList.toggle('header__navigation-active');
+  document.querySelector('.nav__wrapper').classList.toggle('nav__wrapper-active');
+  document.getElementsByTagName('body')[0].classList.toggle('lock');
+  document.getElementById('wrapper').classList.toggle('blur');
+});
+
+const removeSlideMenu = () => {
+  hamburgerButton.classList.remove('hamburger__active');
+  document.querySelector('.header__navigation').classList.remove('header__navigation-active');
+  document.querySelector('.nav__wrapper').classList.remove('nav__wrapper-active');
+};
+const blur = document.querySelector('.nav__wrapper');
+
+blur.addEventListener('click', removeSlideMenu);
 
 //-------Form, Modal window-------------------
 
@@ -226,7 +249,7 @@ graphicButton.addEventListener('click', () => showCards(graphicCards));
 function showCards(arr) {
   let cards = '';
   arr.forEach(el => {
-    cards += `<div class="portfolio__column"><img src="${el.path}" alt="${el.name}" width="220" height="187"></div>`
+    cards += `<div class="portfolio__column"><img src="${el.path}" alt="${el.name}"></div>`
   });
   gallery.innerHTML = cards;
 }
