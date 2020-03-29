@@ -420,8 +420,8 @@ li:not(:first-child)::before {
 
 @media screen and (max-width: 1019px) {
     .slider__item-red {
-        padding: 3.9rem;
-        border-bottom: 4.5px solid #ea676b;
+        padding: 4.2rem;
+        border-bottom: none;
     }
 
     .phone__vertical {
@@ -563,6 +563,7 @@ li:not(:first-child)::before {
 }
 
 /*---SERVICES---*/
+
 .services {
     color: #666d89;
     font-family: "Lato ", sans-serif;
@@ -608,7 +609,6 @@ li:not(:first-child)::before {
 
 .service {
     display: flex;
-    /*margin-bottom: 1.9rem;*/
     margin: 0 0 1.9rem 0;
     width: 30.1rem;
 }
@@ -647,6 +647,15 @@ li:not(:first-child)::before {
 
 
 @media screen and (max-width: 1019px) {
+    .services {
+        border-bottom: none;
+    }
+
+    .services__list {
+        margin: 2.8rem 0 0 0;
+        padding-bottom: 3rem;
+    }
+
     .services__description {
         padding-top: 4.3rem;
     }
@@ -654,14 +663,6 @@ li:not(:first-child)::before {
     .services__text {
         margin-top: 1.6rem;
         height: 9.9rem;
-    }
-
-    .services__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 2.8rem 0 2.5rem 0;
-        font-family: "Lato", sans-serif;
     }
 
     .service {
@@ -694,11 +695,11 @@ li:not(:first-child)::before {
     .services__list {
         display: flex;
         flex-wrap: wrap;
-        margin: 2.5rem 0 0 0;
+        margin: 2.5rem 0 0.45rem 0;
     }
 
     .service {
-        margin: 0 0 1.5rem 0;
+        margin: 0 0 1.7rem 0;
         width: 100%;
     }
 
@@ -708,11 +709,12 @@ li:not(:first-child)::before {
 
     .service__text {
         height: 7.7rem;
-        margin: .7rem 0;
+        margin: 0.1rem 0;
     }
 }
 
 /*---PORTFOLIO SECTION---*/
+
 .portfolio {
     color: #666d89;
     background: #2d303a;
@@ -817,9 +819,8 @@ li:not(:first-child)::before {
 }
 
 @media screen and (max-width: 1019px) {
-    .header-block__text {
-        margin: 2rem 0 1.1rem 0;
-        height: 6rem;
+    .header-block__title {
+        padding: 6rem 0 0 0;
     }
 
     .filter {
@@ -830,12 +831,6 @@ li:not(:first-child)::before {
         overflow: auto;
         height: 100%;
     }
-
-    .header-block__title {
-        padding: 6rem 0 0 0;
-    }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -843,36 +838,36 @@ li:not(:first-child)::before {
         padding: 6rem 0 0 0;
     }
 
-    /*.header-block__title {*/
-    /*    padding: 4.2rem 0 0 0;*/
-    /*}*/
-    .header-block__title {
-        padding: 6rem 0 0 0;
+    .header-block__text {
+        margin: 2rem 0 1.1rem 0;
+        height: 6rem;
     }
 
-
-    /*.header-block__text {*/
-    /*    margin: 1.4rem 0 1rem 0;*/
-    /*    height: 9.6rem;*/
-    /*}*/
     .portfolio__items {
         overflow: auto;
         height: 100%;
         grid-template-columns: auto auto auto;
-        grid-gap: 1.965rem;
+        grid-gap: 2rem;
         margin-bottom: 5.6rem;
     }
 }
 
 @media screen and (max-width: 376px) {
     .portfolio__items {
-        /*height: 55rem;*/
-        /*overflow: hidden;*/
-        /*display: grid;*/
-        /*justify-content: center;*/
+        height: 56rem;
+        overflow: hidden;
         grid-template-columns: auto auto;
-        grid-gap: 1.4rem;
-        margin-bottom: 4.2rem;
+        grid-column-gap: 1.3rem;
+        grid-row-gap: 1.1rem;
+        margin-bottom: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .filter__button {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-right: 0.4rem;
     }
 }
 
@@ -975,6 +970,7 @@ li:not(:first-child)::before {
 @media screen and (max-width: 1019px) {
     .about-us {
         height: 100%;
+        border-bottom: none
     }
 
     .about-us__wrapper {
@@ -1004,10 +1000,9 @@ li:not(:first-child)::before {
     }
 
     .layout-3-column {
-        margin-bottom: 6.7rem;
+        padding-bottom: 7.2rem;
     }
 }
-
 
 @media screen and (max-width: 767px) {
     .about-us {
@@ -1019,32 +1014,36 @@ li:not(:first-child)::before {
     }
 
     .about-us__title {
-        padding: 3.3rem 0 0 0.1rem;
+        padding: 3rem 0 0 0.1rem;
     }
 
     .about-us__text {
         height: 22rem;
-        margin: 1.3rem 0 2.8rem 0.1rem;
+        margin: 1.3rem 0 1.3rem 0.1rem;
     }
 
     .layout-3-column {
         flex-wrap: wrap;
-        margin-bottom: 1.1rem;
+        padding-bottom: 0.8rem;
     }
 
     .employee__content {
         flex-basis: 100%;
         -webkit-flex-basis: 100%;
-        margin: 0 0 3.4rem 0;
+        margin: 0 0 3.1rem 0;
     }
 
     .employee__name {
-        margin: 1.2rem 0 0 0;
+        margin: 1.6rem 0 0 0;
     }
 
     .employee__text {
         height: 4.7rem;
-        margin: 0.1rem 0 0 0;
+        margin: 0;
+    }
+
+    .employee__social-icons {
+        margin: 1rem 0 0 0;
     }
 }
 
@@ -1277,11 +1276,11 @@ textarea {
 }
 
 @media screen and (max-width: 1019px) {
-  .quote__title {
-    padding: 5rem 0 0 0;
-  }
+    .quote__title {
+        padding: 5rem 0 0 0;
+    }
 
-  .quote__text {
+    .quote__text {
         height: 9.6rem;
     }
 
@@ -1326,7 +1325,7 @@ textarea {
     }
 
     .quote__title {
-        padding: 4.4rem 0 0 0;
+        padding: 4.2rem 0 0 0;
     }
 
     .quote__text {
@@ -1345,14 +1344,11 @@ textarea {
 
     .contact__content {
         width: 100%;
-    }
-
-    .contact {
-        margin-top: 1.9rem;
+        padding-left: 0;
     }
 
     .form__button {
-        margin-bottom: 3.2rem;
+        margin-bottom: 4.8rem;
     }
 
     .form__button button {
@@ -1361,12 +1357,18 @@ textarea {
 
     .contact__text {
         height: 9.4rem;
+        margin-top: 0.3rem;
     }
 
     .contact__data {
-        margin: 0 0 4.2rem;
+        margin: 0.5rem 0 4.1rem 0;
+    }
+
+    .ico-block {
+        margin-bottom: 0.5rem;
     }
 }
+
 
 /*--------FOOTER---------*/
 .footer {
